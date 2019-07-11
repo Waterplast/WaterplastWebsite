@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142195686-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-142195686-1');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+      integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="CSS/slick.css" />
+    <!-- Slick Theme -->
+    <link rel="stylesheet" type="text/css" href="CSS/slick-theme.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <!-- Comment Them Later -->
+    <style>
+      /* .test {
+        border: 1px solid black;
+        background: lightblue;
+      } */
+      /* .test2 {
+        border: 1px solid black;
+        background: lightcoral;
+        min-height: 100%;
+      } */
+    
+      .abt-text-box {
+          padding-top: 6.4%;
+      }
+
+      /* .carousel {
+        height: 60vh !important;
+      } */
+      /* .card {
+        border-radius: 1rem;
+      }
+
+      .card.horizontal .card-image img {
+        border-radius: 1rem;
+      } */
+
+      /* On screens that are 600px or less, set the background color to olive */
+     @media screen and (max-width: 600px) {
+        .abt-text-box{
+            padding-top: 1.5%;
+        }
+      }
+
+      .section {
+        padding-bottom: 0px;
+        padding-top: 0px; 
+      }
+
+      .row {
+        margin: 0px;
+        padding: 1rem;
+      }
+
+      .form-button {
+        width: 100%;
+      }
+
+      .mid-section, .left-section {
+        margin-top: 1.5rem;
+      }
+
+      .navbar-list {
+        text-transform: uppercase;
+      }
+
+      .banner {
+        text-transform: uppercase;
+        background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-family: 'Germania One', cursive;
+      }
+
+      .banner h1 {
+        font-size: 4em !important;
+      }
+
+      .slider-header {
+        /* text-decoration: underline; */
+        text-transform: uppercase;
+        font-family: 'Germania One', cursive;
+        font-size: 1.8rem;
+      }
+
+      .flow-text {
+        font-size: 1.3rem;
+      }
+
+      .slider-row, .slider-hero {
+        padding: 0;
+      }
+
+      .hero-slider-img {
+        height: 90vh;
+        width: 100%;
+      }
+    </style>
+
+    <title>Waterplast-materialize</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+      <nav class="blue lighten-2">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#Home" class="brand-logo">
+              <img src="images/final2.png" alt="brand-logo" width="200px">
+            </a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right button-collapse hide-on-med-and-down navbar-list">
+              <li>
+                <a href="#About">About</a>
+              </li>
+              <li>
+                <a href="#Products">Products</a>
+              </li>
+              <li>
+                <a href="#Certificates">Certificates</a>
+              </li>
+              <li>
+                <a href="#Sales">Sales Enquiry</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li>
+        <a href="#About" class="sidenav-close">About Us</a>
+      </li>
+      <li>
+        <a href="#Products" class="sidenav-close">Products</a>
+      </li>
+      <li>
+        <a href="#Certificates" class="sidenav-close">Certificates</a>
+      </li>
+      <li>
+        <a href="#Sales" class="sidenav-close">Sales Enquiry</a>
+      </li>
+    </ul>
+
+    <!-- Carousel -->
+    <section class="section" id="Home">
+      <div class="row slider-row">
+        <div class="slider-hero col s12">
+          <div>
+            <img src="images/6.jpeg" alt="Hero-slider-img-1" class="img-fluid hero-slider-img">
+          </div>
+          <div>
+            <img src="images/7.jpeg" alt="Hero-slider-img-2" class="img-fluid hero-slider-img">
+          </div>
+          <div>
+            <img src="images/9.jpeg" alt="Hero-slider-img-3" class="img-fluid hero-slider-img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="About" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="slider-img col s12 m6 push-m6">
+            <div>
+              <img
+                src="https://source.unsplash.com/random/800x600"
+                alt="1"
+                class="img-fluid"
+              />
+            </div>
+            <div>
+              <img
+                src="https://source.unsplash.com/user/erondu/800x600"
+                alt="2"
+                class="img-fluid"
+              />
+            </div>
+            <div>
+              <img
+                src="https://source.unsplash.com/800x600/?nature,water"
+                alt="3"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div class="slider-text col s12 m6 test2 pull-m6">
+                <div class="abt-text-box">
+                  <h3><span class="slider-header blue-text lighten-2">About Us</span></h3>
+                  <p class="flow-text">
+                    <span class="bold-text">Waterplast<sup>&reg;</sup></span> is a brand name synonymous with quality, durability
+                    and reliability. With over 15 years of experience in the
+                    industry, <span class="bold-text">Waterplast</span> is committed to fulfilling the goal of
+                    watering the nation through constant innovation in plumbing
+                    pipes, irrigation and sewerage technologies.
+                  </p>
+                </div>
+                <div class="abt-text-box">
+                  <h3><span class="slider-header blue-text lighten-2">Our Infrastructure</span></h3>
+                  <p class="flow-text">
+                    Our world class manufacturing facilities are located in <span class="bold-text">Prayagraj</span> 
+                    and <span class="bold-text">Noida</span> district in Uttar Pradesh, with a combined capacity to produce 
+                    <span class="numeral-text">7000</span> Metric Tons per year. The units are equipped with state of the art machinery 
+                    and follow a stringent quality standards to ensure zero defect and leak proof products 
+                    signified by <span class="numeral-text">ISO 9001:2015</span> and <span class="numeral-text">ISI 4985</span> certifications.
+                  </p>
+                </div>
+                <div class="abt-text-box">
+                  <h3><span class="slider-header blue-text lighten-2">Our Distribution Network<span></h3>
+                  <p class="flow-text">
+                    Dealers and distributors are our partners in fulfilling the dream 
+                    of making water available to everyone and everywhere. With an extensive 
+                    network of dealers, <span class="bold-text">Waterplast<sup>&reg;</sup></span> is committed to provide exceptional services 
+                    to its customers by delivering high quality products.
+                  </p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" id="Products">
+      <div class="row brown lighten-5">
+        <div class="container">
+          <div class="row banner">
+            <div class="col s12">
+              <h1 class="center-align">products</h1>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <!-- Product 1 -->
+            <div class="col m4 offset-s1 s10" data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="hovereffect z-depth-3">
+                <img class="responsive-img" src="images/rigid_pipe.jpg" alt="PVC Rigid Pipe & Fittings">
+                <div class="overlay">
+                  <h2>PVC Rigid Pipe & Fittings</h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col m4 offset-s1 s10" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-delay="200">
+              <div class="hovereffect z-depth-3">
+                <img class="responsive-img" src="images/col_pipe.jpg" alt="Column Pipes & Fittings">
+                <div class="overlay">
+                  <h2>Column Pipes & Fittings</h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col m4 offset-s1 s10" data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="1500" data-aos-delay="400">
+              <div class="hovereffect z-depth-3">
+                <img class="responsive-img" src="images/del_pipe.jpg" alt="Delivery Pipe & Fittings">
+                <div class="overlay">
+                  <h2>Delivery Pipe & Fittings</h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col m4 offset-s1 s10" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="1500" data-aos-delay="600">
+              <div class="hovereffect z-depth-3">
+                <img class="responsive-img" src="images/10.jpeg" alt="Garden Pipe & Fittings">
+                <div class="overlay">
+                  <h2>Garden Pipe & Fittings</h2>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Product 6 -->
+            <div class="col m4 offset-s1 s10" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" data-aos-delay="700">
+              <div class="hovereffect z-depth-3">
+                <img class="responsive-img" src="images/cpvc_pipe.jpg" alt="Plumbing Pipe & Fittings">
+                <div class="overlay">
+                  <h2>Plumbing Pipe & Fittings</h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col m4 offset-s1 s10" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="1500" data-aos-delay="800">
+              <div class="hovereffect z-depth-3">
+                <img class="responsive-img" src="images/electrical_pipe.jpg" alt="Casing Pipe & Fiiting">
+                <div class="overlay">
+                  <h2>Casing Pipe & Fiiting</h2>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="Certificates">
+        <div class="row">
+          <div class="container">
+            <div class="row banner">
+              <div class="col s12">
+                <h1 class="center-align">certificates</h1>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <!-- <div class="col s12 m6 center-align" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="2200"> -->
+              <div class="col s12 m6 center-align">
+                <img class="responsive-img" src="images/c1.png" alt="certificate 1 : IS4985" id="certificate1">
+              </div>
+
+              <!-- <div class="col s12 m6 center-align" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="2200"> -->
+              <div class="col s12 m6 center-align"></div>
+                <img class="responsive-img" src="images/c2.png" alt="certificate 2 : ISO 9001:2015" id="certificate2">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Sales Enquiry -->
+    <section class="section" id="Sales">
+      <div class="row grey lighten-3">
+        <div class="container">
+          <div class="row banner">
+            <div class="col s12">
+              <h1 class="center-align">Write To Us</h1>
+            </div>
+          </div>
+          <div class="row">
+            <form action="POST" data-netlify="true">
+              <div class="col s10 offset-s1 m6 offset-m3 input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="name" name="name" type="text" class="validate">
+                <label for="name">Name</label>
+              </div>
+  
+              <div class="col s10 offset-s1 m6 offset-m3 input-field">
+                <i class="material-icons prefix">mail</i>
+                <input id="email" name="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+  
+              <div class="col s10 offset-s1 m6 offset-m3 input-field">
+                <i class="material-icons prefix">phone</i>
+                <input id="phone" name="phone" type="tel" class="validate">
+                <label for="phone">Contact Number</label>
+              </div>
+  
+              <div class="col s10 offset-s1 m6 offset-m3 input-field">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="message" name="message" type="text" class="validate materialize-textarea"></textarea>
+                <label for="message">Your Message Here...</label>
+              </div>
+  
+              <div class="col s10 offset-s1 m6 offset-m4">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+
+              <div class="col s10 offset-s1 m6 offset-m3">
+                <button class="btn waves-effect waves-light form-button blue lighten-2" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer blue lighten-2" id = 'footer'>
+      <div class="row">
+        <!-- <div class="container"> -->
+          <!-- <div class="row"> -->
+            <!-- logo n links -->
+            <div class="col s12 m3 left-section">
+              <div class="row">
+                <div class="col s12">
+                  <img src="images/final2.png" alt="brand-logo" class="responsive-img" width="75%">
+                </div>
+                <div class="col s12">
+                  <h5 class="hindi-text">मजबूती बेमिसाल...<br/>चले सालों साल</h5>
+                </div>
+                <div class="col s12 footer-link center-align">
+                  <a href="#Home" class="footer-links">home</a><span class="footer-divider">.</span>
+                  <a href="#About" class="footer-links">about</a><span class="footer-divider">.</span>
+                  <a href="#footer" class="footer-links">contact us</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Address & contact number -->
+            <div class="col s12 m5 mid-section">
+              <div class="row">
+                <div class="col s12">
+                  <ul class="collapsible blue-text">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">room</i>Noida Industrial Area<br/>UP, India</div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">phone</i>+91 123 4567890</div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">mail</i>support@company.com</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Who are we -->
+            <div class="col s12 m4">
+              <div class="row">
+                <div class="col s12">
+                  <h3>Who are we?</h3>
+                  <p><span class="text-bold">Waterplast<sup>&reg;</sup></span>is a brand name synonymous with quality, durability
+                    and reliability. With over 15 years of experience in the
+                    industry, Waterplast is committed to fulfilling the goal of
+                    watering the nation through constant innovation in plumbing
+                    pipes, irrigation and sewerage technologies.</p>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+        <!-- </div> -->
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!-- Animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Slick.js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="JS/main.js"></script>
+
+    <script>
+      
+    </script>
+  </body>
+</html>
